@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colaboradores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>colaborador</h1>
+        </div>
+
+        <div class="row">
+
+
+            <form method="POST" id="formulario" action="home.html">
+
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.rutcola.label}}
+                        {{datos_form.rutcola}} 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.nombre.label}}
+                        {{datos_form.nombre}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.telefono.label}}
+                        {{datos_form.telefono}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.direccion.label}}
+                        {{datos_form.direccion}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.email.label}}
+                        {{datos_form.email}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.pais.label}}
+                        {{datos_form.pais}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{datos_form.contrasena.label}}
+                        {{datos_form.contrasena}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+                    <input type="reset" class="btn btn-primary" id="limpiar" value="limpiar">
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

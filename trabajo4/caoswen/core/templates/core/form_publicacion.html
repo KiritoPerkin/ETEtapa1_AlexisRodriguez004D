@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colaboradores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Publicacion</h1>
+        </div>
+
+        <div class="row">
+
+
+            <form method="POST" id="formulario" action="">
+
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form-group">
+                        {{Publicacion_form.Correo.label}}
+                        {{Publicacion_form.Correo}} 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{Publicacion_form.Nombre.label}}
+                        {{Publicacion_form.Nombre}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{Publicacion_form.Detalles.label}}
+                        {{Publicacion_form.Detalles}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        {{Publicacion_form.rut.label}}
+                        {{Publicacion_form.rut}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+                    <input type="reset" class="btn btn-primary" id="limpiar" value="limpiar">
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
