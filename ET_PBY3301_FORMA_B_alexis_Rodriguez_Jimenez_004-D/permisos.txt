@@ -1,0 +1,24 @@
+create user c##trabajo4 identified by prueba;
+grant connect, resource to c##trabajo4;
+alter user c##trabajo4 default tablespace users quota unlimited on users;
+
+
+super user
+
+username: alexis
+
+password:Aleroji20
+
+
+
+http://127.0.0.1:8000/admin/
+http://127.0.0.1:8000/form_datos/
+http://127.0.0.1:8000/form_publicacion/
+http://127.0.0.1:8000/  <--corresponde al home
+http://127.0.0.1:8000/ver/
+http://127.0.0.1:8000/form_modificar/
+http://127.0.0.1:8000/lista_api
+http://127.0.0.1:8000/login
+http://127.0.0.1:8000/lista_datos
+http://127.0.0.1:8000/detalles_datos
+
